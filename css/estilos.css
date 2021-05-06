@@ -1,0 +1,395 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores de css*/
+
+
+/* https://www.geogebra.org/graphing?lang=es */
+
+
+/*selector de etiqueta jemplos:  header --section -article -nav*/
+
+
+/*selector descendente ejemplo para llegar a la etiqueta <a   /> body header div nav ol li a{}*/
+
+
+/*selector de clase se hace con un . ejemplo: .link */
+
+
+/*selctor de id # se reconoce con # ejemplo: #portafolio*/
+
+
+/* gris oscuro = #1d252c */
+
+
+/* gris claro = #626262 */
+
+
+/* background gris  = #1b2127 */
+
+
+/* celeste = c*/
+
+.header {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    /*Fijar cabecera*/
+    flex-wrap: wrap;
+    /*Esta propiedad  indica si los eslementos fluen a otra linea cuando se modifica la resolución de pantalla a la cual son sometidos*/
+    z-index: 99;
+    width: 100%;
+    /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0;
+    /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;
+    /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    /* Hacemos que la cabecera tenga una posición fija */
+}
+
+figure {
+    margin: 0;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0px;
+    padding-top: 70px;
+    /* Relleno superior igual a la altura de la cabecera*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    /* font-style: italic; */
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    /* text-transform: uppercase; */
+    /* text-decoration: underline; */
+}
+
+h1 strong {
+    color: #026fff;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: "Sourec Sans Pro";
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero {
+    height: 300px;
+    /* background-image: url("../imagenes/programador-full-stack.jpg"); */
+    background-color: #1b2127;
+    /* background-size: 700px 500px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    object-fit: cover;
+}
+
+.portfolio {
+    background: #fafafa;
+    padding: 20px;
+    padding: 80px 20px 20px 20px;
+    /* background: red; */
+}
+
+.project {
+    /* border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-left: 10px solid blue;
+    border-bottom: 10px solid yellow; */
+    /* border-top-color: red;
+    border-top-width: 15px;
+    border-top-style: solid; */
+    border: 1px solid gray;
+    /* border-radius: 50px 10px 10px 1px;  */
+    border-radius: 10px;
+    /* margin-right: ;
+    margin-left: ;
+    margin-top: ; */
+    /* margin: 10px; */
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px dimgrey;
+    /* con esta propiedad le asigno sombras a mi elemento */
+}
+
+.project-course,
+.project-date,
+.project-url {
+    margin: 10px 0;
+}
+
+
+/* .project-date {
+    margin: 10px 0;
+} */
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: "Fjalla One";
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-details {
+    /* border: 1px solid gray;
+    border-radius: 10px; */
+    width: 500px;
+}
+
+.project-imageContainer {
+    width: 500px;
+    /* background-image: url("../imagenes/desarrollador.jpg"); */
+    background-size: 500px 500px;
+}
+
+.event-total {
+    padding: 80px 0px 80px 0px;
+}
+
+.event-list-title {
+    margin-left: 10px;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event {
+    /* border: 1px solid gray; */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+    box-shadow: 0px 0px 15px lightsteelblue;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    /*La propiedad  position especifica el tipo de método de posicionamiento utilizado para un elemento (estático, relativo, absoluto, fijo o adhesivo).Ayuda  a que el background se superponga sobre la imagen*/
+    z-index: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px lightsteelblue;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.event-url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color .4s;
+    /*Aporete de la comunidad para que se cambie el color del boton al poner el mouse sobre el*/
+}
+
+.event-url:hover {
+    /*Aporete de la comunidad para que se cambie el color del boton al poner el mouse sobre el*/
+    color: white;
+    border: 1px #056fff;
+    background-color: #056fff;
+}
+
+
+/*Aporete de la comunidad para que se cambie el color del boton al poner el mouse sobre el*/
+
+.contact {
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border: 1px solid #056fff;
+    border-radius: 6px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter {
+    background-image: url("../imagenes/twitter.jpg");
+    /* background-size: 50px 50px; */
+}
+
+.social-link.facebook {
+    background-image: url("../imagenes/facebook.jpg");
+}
+
+.social-link.instagram {
+    background-image: url("../imagenes/instagram.jpg");
+}
+
+.social-link.github {
+    background-image: url("../imagenes/github.jpg");
+}
+
+.social-link.linkedin {
+    background-image: url("../imagenes/linkedin.jpg");
+}
+
+.form-email input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url("../imagenes/email.jpg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+
+/* Excelente aporte de la comunidad para que el puntero se haga manito*/
+
+button {
+    cursor: pointer;
+}
+
+.form-email button {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    transition: background-color .1s;
+}
+
+.form-email:hover button {
+    color: black;
+    border: 1px white;
+    background-color: white;
+}
+
+.form-email h3 {
+    font-family: "Sourec Sans Pro";
+}
+
+.footer {
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}
+
+.container {
+    /* border: 1px solid red; el borde es una gran forma de depuracion de estilos */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
